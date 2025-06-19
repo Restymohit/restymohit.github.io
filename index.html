@@ -1,0 +1,109 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohit Sharma | Full Stack Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 via-white to-blue-100 min-h-screen font-sans text-gray-800">
+  <!-- Navbar -->
+  <header class="sticky top-0 bg-white shadow-md z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Mohit Sharma</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="container mx-auto px-6 py-16 text-center" id="home">
+    <div class="bg-white bg-opacity-60 backdrop-blur-lg p-8 rounded-lg shadow-md inline-block">
+      <img src="assets/mohit.png" alt="Mohit Sharma" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4" />
+      <h2 class="text-3xl font-bold mb-2">Hi, I'm Mohit Sharma</h2>
+      <p class="text-lg mb-6 max-w-xl mx-auto">
+        Full Stack Developer with a passion for building modern, user-friendly web applications.
+      </p>
+      <a href="assets/resume.pdf" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700" download>
+        Download Resume
+      </a>
+    </div>
+  </section>
+
+
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white px-6">
+    <div class="container mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+      <p class="max-w-2xl text-lg">
+        I graduated from Chandigarh University with a BE in Computer Science and Engineering (2020–2024). After that, I
+        joined Masai School to master Full-Stack Web Development, working with JavaScript, React, Node.js, and more.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 px-6">
+    <div class="container mx-auto">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+        <div class="bg-white p-4 shadow rounded">HTML</div>
+        <div class="bg-white p-4 shadow rounded">CSS / Tailwind</div>
+        <div class="bg-white p-4 shadow rounded">JavaScript</div>
+        <div class="bg-white p-4 shadow rounded">React.js</div>
+        <div class="bg-white p-4 shadow rounded">Node.js</div>
+        <div class="bg-white p-4 shadow rounded">Express</div>
+        <div class="bg-white p-4 shadow rounded">MongoDB</div>
+        <div class="bg-white p-4 shadow rounded">Git & GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-600 py-6 bg-gray-100">
+    © 2025 Mohit Sharma. All rights reserved.
+  </footer>
+
+  <!-- Contact Section -->
+  <section class="bg-gray-100 py-12" id="contact">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-8">Contact Me</h2>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-8">
+        <!-- GitHub -->
+        <a href="https://github.com/Restymohit/Mohit-Sharma" target="_blank"
+          class="flex items-center gap-3 text-gray-800 hover:text-blue-600 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+            class="w-6 h-6" />
+          <span class="underline">GitHub</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/mohit-sharma-75435b232/" target="_blank"
+          class="flex items-center gap-3 text-gray-800 hover:text-blue-600 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"
+            class="w-6 h-6" />
+          <span class="underline">LinkedIn</span>
+        </a>
+        <!-- Email -->
+        <a href="mailto:mohitsharma7724@gmail.com"
+          class="flex items-center gap-3 text-gray-800 hover:text-blue-600 transition">
+          <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email" class="w-6 h-6" />
+          <span class="underline">Mail</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
