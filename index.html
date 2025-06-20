@@ -1,12 +1,17 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohit Sharma | Full Stack Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body class="bg-gradient-to-br from-blue-50 via-white to-blue-100 min-h-screen font-sans text-gray-800">
@@ -15,8 +20,8 @@
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-xl font-bold">Mohit Sharma</h1>
       <nav class="space-x-6">
-        <a href="#about" class="hover:text-blue-600">About</a>
         <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#education" class="hover:text-blue-600">Education</a>
         <a href="#projects" class="hover:text-blue-600">Projects</a>
         <a href="#contact" class="hover:text-blue-600">Contact</a>
       </nav>
@@ -28,7 +33,8 @@
       <img src="assets/mohit.png" alt="Mohit Sharma" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4" />
       <h2 class="text-3xl font-bold mb-2">Hi, I'm Mohit Sharma</h2>
       <p class="text-lg mb-6 max-w-xl mx-auto">
-        Full Stack Developer with a passion for building modern, user-friendly web applications.
+        Full Stack Developer with a passion for building modern, user-friendly web applications using modern full stack
+        technologies.
       </p>
       <a href="assets/resume.pdf" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700" download>
         Download Resume
@@ -36,32 +42,258 @@
     </div>
   </section>
 
+  <!-- Skills -->
+  <section id="skills" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Skills & Technologies</h2>
 
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-  <!-- About Section -->
-  <section id="about" class="py-16 bg-white px-6">
-    <div class="container mx-auto">
-      <h3 class="text-2xl font-semibold mb-4">About Me</h3>
-      <p class="max-w-2xl text-lg">
-        I graduated from Chandigarh University with a BE in Computer Science and Engineering (2020–2024). After that, I
-        joined Masai School to master Full-Stack Web Development, working with JavaScript, React, Node.js, and more.
-      </p>
+        <!-- Frontend -->
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <i class="devicon-react-original colored text-cyan-500 text-4xl"></i>
+          <p class="text-lg font-semibold">ReactJS</p>
+        </div>
+
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <i class="devicon-javascript-plain colored text-yellow-400 text-4xl"></i>
+          <p class="text-lg font-semibold">JavaScript</p>
+        </div>
+
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <i class="devicon-html5-plain colored text-orange-500 text-4xl"></i>
+          <p class="text-lg font-semibold">HTML5</p>
+        </div>
+
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <i class="devicon-css3-plain colored text-blue-500 text-4xl"></i>
+          <p class="text-lg font-semibold">CSS3</p>
+        </div>
+
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <i class="devicon-tailwindcss-plain colored text-sky-400 text-4xl"></i>
+          <p class="text-lg font-semibold">Tailwind CSS</p>
+        </div>
+
+        <!-- Backend -->
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <i class="devicon-nodejs-plain colored text-green-600 text-4xl"></i>
+          <p class="text-lg font-semibold">Node.js</p>
+        </div>
+
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <i class="devicon-express-original colored text-gray-700 text-4xl"></i>
+          <p class="text-lg font-semibold">Express</p>
+        </div>
+
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <i class="devicon-mongodb-plain colored text-green-500 text-4xl"></i>
+          <p class="text-lg font-semibold">MongoDB</p>
+        </div>
+
+        <!-- Firebase (fixed icon) -->
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" class="w-8 h-8" />
+          <p class="text-lg font-semibold">Firebase</p>
+        </div>
+
+        <!-- Java -->
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <i class="devicon-java-plain colored text-red-600 text-4xl"></i>
+          <p class="text-lg font-semibold">Java</p>
+        </div>
+
+        <!-- Git & GitHub -->
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <i class="devicon-git-plain colored text-orange-600 text-4xl"></i>
+          <p class="text-lg font-semibold">Git</p>
+        </div>
+
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <i class="devicon-github-original colored text-gray-800 text-4xl"></i>
+          <p class="text-lg font-semibold">GitHub</p>
+        </div>
+
+        <!-- VS Code -->
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <i class="devicon-vscode-plain colored text-indigo-500 text-4xl"></i>
+          <p class="text-lg font-semibold">VS Code</p>
+        </div>
+
+        <!-- Netlify (confirmed) -->
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-plain.svg" alt="Netlify"
+            class="w-8 h-8 opacity-90" />
+          <p class="text-lg font-semibold">Netlify</p>
+        </div>
+
+        <!-- Postman -->
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" class="w-8 h-8" />
+          <p class="text-lg font-semibold">Postman</p>
+        </div>
+
+        <!-- MySQL (fixed icon) -->
+        <div
+          class="bg-gray-50 p-4 rounded-xl shadow transition-transform transform hover:scale-105 hover:shadow-lg flex items-center gap-3">
+          <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL" class="w-8 h-8" />
+          <p class="text-lg font-semibold">MySQL</p>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section id="skills" class="py-16 px-6">
-    <div class="container mx-auto">
-      <h3 class="text-2xl font-semibold mb-6 text-center">Skills</h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-        <div class="bg-white p-4 shadow rounded">HTML</div>
-        <div class="bg-white p-4 shadow rounded">CSS / Tailwind</div>
-        <div class="bg-white p-4 shadow rounded">JavaScript</div>
-        <div class="bg-white p-4 shadow rounded">React.js</div>
-        <div class="bg-white p-4 shadow rounded">Node.js</div>
-        <div class="bg-white p-4 shadow rounded">Express</div>
-        <div class="bg-white p-4 shadow rounded">MongoDB</div>
-        <div class="bg-white p-4 shadow rounded">Git & GitHub</div>
+  <!-- Education -->
+  <section id="education" class="bg-white py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">
+        My <span class="text-[#f75247]">Education</span>
+      </h2>
+
+      <div class="space-y-6">
+        <!-- Masai School -->
+        <div
+          class="bg-white shadow-md rounded-lg p-6 hover:bg-gray-50 hover:shadow-lg hover:scale-[1.01] transition duration-300">
+          <h3 class="text-xl font-medium text-gray-800">Full-Stack Web Development</h3>
+          <p class="text-lg font-medium text-blue-500">Masai School</p>
+          <p class="text-sm text-gray-500 mt-1">Aug 2024 – Present</p>
+          <p class="text-gray-600 mt-2 text-[15px] leading-relaxed">
+            A military-style coding bootcamp with a strong focus on Full-Stack Web Development. Covered technologies
+            such as JavaScript, React, and Node.js, along with data structures and soft skills through hands-on,
+            practical learning.
+          </p>
+        </div>
+
+        <!-- Chandigarh University -->
+        <div
+          class="bg-white shadow-md rounded-lg p-6 hover:bg-gray-50 hover:shadow-lg hover:scale-[1.01] transition duration-300">
+          <h3 class="text-xl font-medium text-gray-800">Bachelor of Engineering in Computer Science</h3>
+          <p class="text-lg font-medium text-blue-500">Chandigarh University</p>
+          <p class="text-sm text-gray-500 mt-1">2020 – 2024</p>
+          <p class="text-gray-700 mt-1">CGPA: 6.49</p>
+          <p class="text-gray-600 mt-2 text-[15px] leading-relaxed">
+            Gained foundational knowledge in core subjects such as Data Structures, Operating Systems, Database
+            Management Systems, and Software Engineering, which helped shape my programming fundamentals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Project 1 -->
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition">
+          <img src="assets/project1.png" alt="Employee Management System" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Employee Management System</h3>
+          <p class="text-gray-700 mb-4">
+            A role-based task management app with separate dashboards for admins and employees to manage, assign, and
+            track tasks.
+          </p>
+          <div class="flex flex-wrap gap-2 text-sm text-gray-800 mb-4">
+            <span class="bg-gray-200 px-2 py-1 rounded">React.js</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">JavaScript</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Tailwind CSS</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">HTML</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Local Storage</span>
+          </div>
+          <div class="flex gap-4">
+            <a href="https://github.com/Restymohit/Employee-Managment-System" target="_blank"
+              class="text-blue-600 underline">GitHub</a>
+            <a href="https://employee-system-mohit.netlify.app/" target="_blank" class="text-green-600 underline">Live
+              Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition">
+          <img src="assets/project3.png" alt="Social Collaboration Platform" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Social Collaboration Platform</h3>
+          <p class="text-gray-700 mb-4">
+            A dynamic social platform built for like-minded individuals to connect and collaborate on shared interests
+            or
+            projects. Features include post creation, skill tags, comment sections, and an intuitive UI.
+          </p>
+          <div class="flex flex-wrap gap-2 text-sm text-gray-800 mb-4">
+            <span class="bg-gray-200 px-2 py-1 rounded">React.js</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Redux</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">CSS</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">HTML</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Local Storage</span>
+          </div>
+          <div class="flex gap-4">
+            <a href="https://github.com/Dheerajmlk/Social" target="_blank" class="text-blue-600 underline">GitHub</a>
+            <a href="https://social-mv6s-git-main-dheerajs-projects-662fbfc6.vercel.app/" target="_blank"
+              class="text-green-600 underline">Live Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition">
+          <img src="assets/project4.png" alt="Investment Portfolio Tracker" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Investment Portfolio Tracker</h3>
+          <p class="text-gray-700 mb-4">
+            A responsive portfolio tracker to manage assets like stocks and crypto. It features real-time data
+            visualization and an intuitive dashboard for smarter investment decisions.
+          </p>
+          <div class="flex flex-wrap gap-2 text-sm text-gray-800 mb-4">
+            <span class="bg-gray-200 px-2 py-1 rounded">React.js</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Redux</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Chart.js</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Axios</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Tailwind CSS</span>
+          </div>
+          <div class="flex gap-4">
+            <a href="https://github.com/Kartik-0106/Investment-Portfolio-Tracker" target="_blank"
+              class="text-blue-600 underline">GitHub</a>
+            <a href="https://portfolio-tracker001.netlify.app/" target="_blank" class="text-green-600 underline">Live
+              Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition">
+          <img src="assets/project2.png" alt="Sliding Puzzle Game" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Sliding Puzzle Game</h3>
+          <p class="text-gray-700 mb-4">
+            A classic 8-tile sliding puzzle built with React. It includes a timer, dark mode, and shuffle functionality
+            for a fun interactive experience.
+          </p>
+          <div class="flex flex-wrap gap-2 text-sm text-gray-800 mb-4">
+            <span class="bg-gray-200 px-2 py-1 rounded">React.js</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">JavaScript</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">CSS</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">HTML</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Local Storage</span>
+          </div>
+          <div class="flex gap-4">
+            <a href="https://github.com/Restymohit/Slidding-Puzzle-Game" target="_blank"
+              class="text-blue-600 underline">GitHub</a>
+            <a href="https://slidding-puzzle-game.vercel.app/" target="_blank" class="text-green-600 underline">Live
+              Demo</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -74,35 +306,31 @@
   <!-- Contact Section -->
   <section class="bg-gray-100 py-12" id="contact">
     <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold mb-8">Contact Me</h2>
+      <h2 class="text-3xl font-bold mb-8">
+        Connect with <span class="text-[#FF6B6B]">Me</span>
+      </h2>
 
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-8">
+      <div class="flex justify-center items-center gap-8">
         <!-- GitHub -->
-        <a href="https://github.com/Restymohit/Mohit-Sharma" target="_blank"
-          class="flex items-center gap-3 text-gray-800 hover:text-blue-600 transition">
+        <a href="https://github.com/Restymohit/Mohit-Sharma" target="_blank">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
-            class="w-6 h-6" />
-          <span class="underline">GitHub</span>
+            class="w-10 h-10 hover:scale-110 transition" />
         </a>
 
         <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/mohit-sharma-75435b232/" target="_blank"
-          class="flex items-center gap-3 text-gray-800 hover:text-blue-600 transition">
+        <a href="https://www.linkedin.com/in/mohit-sharma-75435b232/" target="_blank">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"
-            class="w-6 h-6" />
-          <span class="underline">LinkedIn</span>
-        </a>
-        <!-- Email -->
-        <a href="mailto:mohitsharma7724@gmail.com"
-          class="flex items-center gap-3 text-gray-800 hover:text-blue-600 transition">
-          <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email" class="w-6 h-6" />
-          <span class="underline">Mail</span>
+            class="w-10 h-10 hover:scale-110 transition" />
         </a>
 
+        <!-- Email -->
+        <a href="mailto:mohitsharma7724@gmail.com" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/FF0000/new-post.png" alt="Email"
+            class="w-10 h-10 hover:scale-110 transition" />
+        </a>
       </div>
     </div>
   </section>
-
 
 </body>
 
