@@ -16,17 +16,32 @@
 
 <body class="bg-gradient-to-br from-blue-50 via-white to-blue-100 min-h-screen font-sans text-gray-800">
   <!-- Navbar -->
-  <header class="sticky top-0 bg-white shadow-md z-50">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Mohit Sharma</h1>
-      <nav class="space-x-6">
-        <a href="#skills" class="hover:text-blue-600">Skills</a>
-        <a href="#education" class="hover:text-blue-600">Education</a>
-        <a href="#projects" class="hover:text-blue-600">Projects</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
-      </nav>
-    </div>
-  </header>
+ <header class="sticky top-0 bg-white shadow-md z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Mohit Sharma</h1>
+
+    <!-- Hamburger Icon -->
+    <button id="menu-toggle" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="#skills" class="hover:text-blue-600">Skills</a>
+      <a href="#education" class="hover:text-blue-600">Education</a>
+      <a href="#projects" class="hover:text-blue-600">Projects</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="fixed top-0 right-0 h-full w-2/3 max-w-xs bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col space-y-6 p-6 z-50">
+    <a href="#skills" class="hover:text-blue-600">Skills</a>
+    <a href="#education" class="hover:text-blue-600">Education</a>
+    <a href="#projects" class="hover:text-blue-600">Projects</a>
+    <a href="#contact" class="hover:text-blue-600">Contact</a>
+  </nav>
+</header>
   <!-- Hero Section -->
   <section class="container mx-auto px-6 py-16 text-center" id="home">
     <div class="bg-white bg-opacity-60 backdrop-blur-lg p-8 rounded-lg shadow-md inline-block">
@@ -348,3 +363,21 @@
 </body>
 
 </html>
+<script>
+  const toggleBtn = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  // Toggle menu on hamburger click
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("translate-x-full");
+    mobileMenu.classList.toggle("translate-x-0");
+  });
+
+  // Auto-close menu when any link is clicked
+  document.querySelectorAll("#mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("translate-x-full");
+      mobileMenu.classList.remove("translate-x-0");
+    });
+  });
+</script>
